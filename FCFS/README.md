@@ -39,7 +39,7 @@ It follows the **FIFO (First In, First Out)** principle.
                    ▼
               Ready Queue
         ┌─────────────────────┐
-        │ P1 │ P2 │ P3 │ P4 │
+        │ P1 │ P2 │ P3 │ P4   │ 
         └─────────────────────┘
                    │
                    ▼
