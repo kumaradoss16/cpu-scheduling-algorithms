@@ -6,8 +6,8 @@ burst_time = []
 #Input process details
 for i in range(n):
     process = int(input(f"Enter Process ID (e.g., P{i+1}): "))
-    at = int(input(f"Enter Arrival Time for Process {process}: "))
-    bt = int(input(f"Enter Burst Time for Process {process}: "))
+    at = int(input(f"Enter Arrival Time for PID {process}: "))
+    bt = int(input(f"Enter Burst Time for PID {process}: "))
     processes.append(process)
     arrival_time.append(at)
     burst_time.append(bt)
