@@ -1,25 +1,25 @@
 Enter the number of processes = 7
 Enter Process ID (e.g., P1): 1
-Enter Arrival Time for Process 1: 8
-Enter Burst Time for Process 1: 4
+Enter Arrival Time for PID 1: 8
+Enter Burst Time for PID 1: 4
 Enter Process ID (e.g., P2): 2
-Enter Arrival Time for Process 2: 5
-Enter Burst Time for Process 2: 5
+Enter Arrival Time for PID 2: 5
+Enter Burst Time for PID 2: 5
 Enter Process ID (e.g., P3): 3
-Enter Arrival Time for Process 3: 7
-Enter Burst Time for Process 3: 2
+Enter Arrival Time for PID 3: 7
+Enter Burst Time for PID 3: 2
 Enter Process ID (e.g., P4): 4
-Enter Arrival Time for Process 4: 2
-Enter Burst Time for Process 4: 1
+Enter Arrival Time for PID 4: 2
+Enter Burst Time for PID 4: 1
 Enter Process ID (e.g., P5): 5
-Enter Arrival Time for Process 5: 4
-Enter Burst Time for Process 5: 3
+Enter Arrival Time for PID 5: 4
+Enter Burst Time for PID 5: 3
 Enter Process ID (e.g., P6): 6
-Enter Arrival Time for Process 6: 6
-Enter Burst Time for Process 6: 1
+Enter Arrival Time for PID 6: 6
+Enter Burst Time for PID 6: 1
 Enter Process ID (e.g., P7): 7
-Enter Arrival Time for Process 7: 3
-Enter Burst Time for Process 7: 2
+Enter Arrival Time for PID 7: 3
+Enter Burst Time for PID 7: 2
 
 FSFC Scheduling Result
 ---------------------------------------------
@@ -36,3 +36,4 @@ Process   AT      BT      CT      TAT     WT
 Average Turnaround Time: 6.29
 Average Waiting Time: 3.71
 Total CPU Idle Time: 2.00
+Schedule Length = 18.00
