@@ -31,7 +31,7 @@ for i in range(n):
     if current_time < arrival_time[i]:
         total_idle += arrival_time[i] - current_time
         current_time = arrival_time[i]
-        
+
     # Execute Process
     current_time += burst_time[i]
     #Store Completion Time
@@ -50,14 +50,14 @@ schedule_length = max(completion_time) - min(arrival_time)
 
 
 print("\nFSFC Scheduling Result")
-print("-" * 72)
+print("-" * 45)
 print(f"{'Process':<10}{'AT':<8}{'BT':<8}{'CT':<8}{'TAT':<8}{'WT':<8}")
-print("-" * 72)
+print("-" * 45)
 
 for i in range(n):
     print(f"{processes[i]:<10}{arrival_time[i]:<8}{burst_time[i]:<8}{completion_time[i]:<8}{turnaround_time[i]:<8}{waiting_time[i]:<8}")
 
-print("-" * 72)
+print("-" *45)
 print(f"Average Turnaround Time: {avg_tat:.2f}")
 print(f"Average Waiting Time: {avg_wt:.2f}")
 print(f"Total CPU Idle Time: {total_idle:.2f}")
