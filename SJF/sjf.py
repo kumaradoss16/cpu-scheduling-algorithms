@@ -55,9 +55,9 @@ while completed < n:
 
 
 print("\nSJF Scheduling Result")
-print("-" * 45)
+print("-" * n * (n+2))
 print(f"{'PID':<10}{'AT':<8}{'BT':<8}{'CT':<8}{'TAT':<10}{'WT':<8}")
-print("-" * 45)
+print("-" * n * (n+2))
 schedule_length = max(process["ct"] for process in processes) - min(process["at"] for process in processes)
 
 total_tat = 0
@@ -70,7 +70,7 @@ for process in execution_order:
 
     print(f"{process['pid']:<10}{process['at']:<8}{process['bt']:<8}{process['ct']:<8}{process['tat']:<10}{process['wt']:<8}")
     
-print("-" * 45)
+print("-" * n * (n+2))
 
 print("\nExecution Order:")
 
