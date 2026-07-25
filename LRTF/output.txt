@@ -1,0 +1,43 @@
+Enter the number of processes: 6
+Enter Process ID for Process 1: 1
+Enter Arrival Time for P1: 0
+Enter Burst Time for P1: 8
+Enter Process ID for Process 2: 2
+Enter Arrival Time for P2: 1
+Enter Burst Time for P2: 6
+Enter Process ID for Process 3: 3
+Enter Arrival Time for P3: 2
+Enter Burst Time for P3: 4
+Enter Process ID for Process 4: 4
+Enter Arrival Time for P4: 3
+Enter Burst Time for P4: 2
+Enter Process ID for Process 5: 5
+Enter Arrival Time for P5: 4
+Enter Burst Time for P5: 6
+Enter Process ID for Process 6: 6
+Enter Arrival Time for P6: 5
+Enter Burst Time for P6: 1
+
+LRTF Scheduling Result
+----------------------------------------------
+PID       AT      BT      CT      TAT       WT      
+----------------------------------------------
+P1        0       8       22      22        14      
+P2        1       6       23      22        16      
+P3        2       4       24      22        18      
+P4        3       2       25      22        20      
+P5        4       6       26      22        16      
+P6        5       1       27      22        21      
+----------------------------------------------
+
+Execution Timeline:
+P1 -> P1 -> P1 -> P2 -> P5 -> P1 -> P2 -> P5 -> P1 -> P2 -> P3 -> P5 -> P1 -> P2 -> P3 -> P5 -> P1 -> P2 -> P3 -> P4 -> P5 -> P1 -> P2 -> P3 -> P4 -> P5 -> P6 -> END
+
+
+Completion Order:
+P1 -> P2 -> P3 -> P4 -> P5 -> P6 -> END
+
+Average Turnaround Time: 22.00
+Average Waiting Time: 17.50
+Schedule Length = 27.00
+Total CPU Idle Time : 0
