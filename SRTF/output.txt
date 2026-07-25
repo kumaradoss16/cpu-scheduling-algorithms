@@ -1,0 +1,31 @@
+Enter the number of processes: 4
+Enter Process ID for Process 1: 1
+Enter Arrival Time for P1: 0
+Enter Burst Time for P1: 10
+Enter Process ID for Process 2: 2
+Enter Arrival Time for P2: 3
+Enter Burst Time for P2: 6
+Enter Process ID for Process 3: 3
+Enter Arrival Time for P3: 7
+Enter Burst Time for P3: 1
+Enter Process ID for Process 4: 4
+Enter Arrival Time for P4: 8
+Enter Burst Time for P4: 3
+
+SRJF Scheduling Result
+----------------------------------------------
+PID       AT      BT      CT      TAT       WT      
+----------------------------------------------
+P3        7       1       8       1         0       
+P2        3       6       10      7         1       
+P4        8       3       13      5         2       
+P1        0       10      20      20        10      
+----------------------------------------------
+
+Execution Order:
+P3 -> P2 -> P4 -> P1 -> END
+
+Average Turnaround Time: 8.25
+Average Waiting Time: 3.25
+Schedule Length = 20.00
+Total CPU Idle Time : 0
