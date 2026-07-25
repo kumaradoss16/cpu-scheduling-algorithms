@@ -16,7 +16,10 @@ for i in range(n):
         }
     )
 
-execution_order = []
+# Records the process executing at each CPU time unit
+execution_timeline = []
+# Records the order in which processes complete
+completion_order = []
 current_time = 0
 completed = 0
 idle_time = 0
@@ -45,6 +48,8 @@ while completed < n:
         current_time += 1
         continue
 
+    execution_timeline.append(processes[index]["pid"])
+
     processes[index]["rt"] -= 1
     current_time += 1
 
@@ -59,7 +64,7 @@ while completed < n:
         processes[index]["ct"] = ct
         processes[index]["tat"] = tat
         processes[index]["wt"] = wt
-        execution_order.append(processes[index])
+        completion_order.append(processes[index]["pid"])
 
 # Output
 print("\nSRJF Scheduling Result")
@@ -71,7 +76,7 @@ schedule_length = max(process["ct"] for process in processes) - min(process["at"
 total_tat = 0
 total_wt = 0
 
-for process in execution_order:
+for process in processes:
     total_tat += process["tat"]
     total_wt += process["wt"]
     
@@ -80,16 +85,22 @@ for process in execution_order:
     
 print("-" * 46)
 
-print("\nExecution Order:")
+print("\nExecution Timeline:")
 
-for process in execution_order:
-    print(process["pid"], end=" -> ")
+for process in execution_timeline:
+    print(process, end=" -> ")
 
 print("END\n")
+
+print("\nCompletion Order:")
+
+for process in completion_order:
+    print(process, end=" -> ")
+
+print("END\n")
+
 
 print(f"Average Turnaround Time: {total_tat / n:.2f}")
 print(f"Average Waiting Time: {total_wt / n:.2f}")
 print(f"Schedule Length = {schedule_length:.2f}")
 print(f"Total CPU Idle Time : {idle_time}")
-
-
