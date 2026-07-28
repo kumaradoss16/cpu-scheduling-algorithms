@@ -51,7 +51,7 @@ while completed < n:
         current_time += 1
 
 print("\nExecution Order")
-print("-" * 85)
+print("-" * 55)
 print(" -> ".join(execution_order))
 
 
