@@ -1,0 +1,50 @@
+Enter the number of processes: 6
+
+Enter Process ID for Process 1: 1
+Enter Arrival Time for 1: 0
+Enter Burst Time for 1: 8
+
+Enter Process ID for Process 2: 2
+Enter Arrival Time for 2: 1
+Enter Burst Time for 2: 6
+
+Enter Process ID for Process 3: 3
+Enter Arrival Time for 3: 2
+Enter Burst Time for 3: 4
+
+Enter Process ID for Process 4: 4
+Enter Arrival Time for 4: 3
+Enter Burst Time for 4: 2
+
+Enter Process ID for Process 5: 5
+Enter Arrival Time for 5: 4
+Enter Burst Time for 5: 6
+
+Enter Process ID for Process 6: 6
+Enter Arrival Time for 6: 5
+Enter Burst Time for 6: 1
+
+Enter Time Quantum: 2
+
+Execution Order
+---------------------------------------------
+1 -> 2 -> 3 -> 1 -> 4 -> 5 -> 2 -> 6 -> 3 -> 1 -> 5 -> 2 -> 1 -> 5
+
+Completion Order
+---------------------------------------------
+4 -> 6 -> 3 -> 2 -> 1 -> 5
+
+Round Robin Scheduling Result
+---------------------------------------------
+PID     AT      BT      CT      TAT       WT      
+---------------------------------------------
+4       3       2       10      7         5       
+6       5       1       15      10        9       
+3       2       4       17      15        11      
+2       1       6       23      22        16      
+1       0       8       25      25        17      
+5       4       6       27      23        17      
+---------------------------------------------
+Average Turnaround Time: 17.00
+Average Waiting Time: 12.50
+CPU Idle Time: 0
